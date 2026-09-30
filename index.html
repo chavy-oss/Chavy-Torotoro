@@ -33,14 +33,44 @@
             text-align: center;
         }
 
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .header-text {
+                text-align: center;
+            }
+        }
+
         header h1 {
             font-size: 2.2rem;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.2rem;
         }
 
         header p {
             color: #38bdf8;
             font-size: 1.1rem;
+            margin-bottom: 0.4rem;
         }
 
         nav {
@@ -147,11 +177,11 @@
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 600;
-            margin-top: 1rem;
+            margin-top: 0.6rem;
         }
 
         .contact-info {
-            margin-top: 0.8rem;
+            margin-top: 0.3rem;
             font-size: 0.95rem;
             color: #cbd5e1;
         }
@@ -160,10 +190,16 @@
 <body>
 
     <header>
-        <h1>CHAVY C. TOROTORO</h1>
-        <p>ELECTRONICS ENGINEER</p>
-        <div class="contact-info">📧 chavytorotoro5@gmail.com | 📱 09317509987</div>
-        <div class="privacy-badge">🔒 RA 10173 Data Privacy Compliant</div>
+        <div class="header-content">
+            <!-- Profile Photo Uploaded as profile.png -->
+            <img src="profile.png" alt="Chavy C. Torotoro" class="profile-img">
+            <div class="header-text">
+                <h1>CHAVY C. TOROTORO</h1>
+                <p>ELECTRONICS ENGINEER</p>
+                <div class="contact-info">📧 chavytorotoro5@gmail.com | 📱 09317509987</div>
+                <div class="privacy-badge">🔒 RA 10173 Data Privacy Compliant</div>
+            </div>
+        </div>
     </header>
 
     <nav>
@@ -189,7 +225,7 @@
             <div style="margin-bottom: 1.5rem;">
                 <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Work Experience</h3>
                 <div class="card">
-                    <h3>Instructor | Wardiere Company (2024 - 2025)</h3>
+                    <h3>Instructor | Wardiere Company (2020–2023)</h3>
                     <ul>
                         <li>Created and delivered engaging classroom lessons.</li>
                         <li>Led discussions and kept active in class.</li>
@@ -254,14 +290,14 @@
                 <div class="cert-card">
                     <h3>Certificate of Appreciation</h3>
                     <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.3rem;">Caraga State University - Dept. of ECE</p>
-                    <img src="certificate 1.png" alt="Certificate of Appreciation - Chavy C. Torotoro">
+                    <img src="cert1.png" alt="Certificate of Appreciation - Chavy C. Torotoro">
                 </div>
 
                 <!-- Certificate 2 Image -->
                 <div class="cert-card">
                     <h3>Certificate of Recognition</h3>
                     <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.3rem;">Wardiere Company - Technical Training Division</p>
-                    <img src="certificate 3.png" alt="Certificate of Recognition - Chavy C. Torotoro">
+                    <img src="cert2.jpg" alt="Certificate of Recognition - Chavy C. Torotoro">
                 </div>
             </div>
 
